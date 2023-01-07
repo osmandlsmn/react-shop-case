@@ -1,0 +1,9 @@
+{
+  "header": {
+    "navigations": {
+      "home": "Ana Sayfa",
+      "basket": "Sepet",
+      "favorites": "Favoriler"
+    }
+  }
+}

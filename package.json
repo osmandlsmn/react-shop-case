@@ -9,8 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "i18next": "^22.4.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.1.4",
+    "react-icomoon": "^2.5.4",
     "react-router-dom": "^6.6.1",
     "sass": "^1.57.1"
   },

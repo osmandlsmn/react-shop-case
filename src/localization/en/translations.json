@@ -1,0 +1,9 @@
+{
+  "header": {
+    "navigations": {
+      "home": "Home",
+      "basket": "Basket",
+      "favorites": "Favorites"
+    }
+  }
+}
