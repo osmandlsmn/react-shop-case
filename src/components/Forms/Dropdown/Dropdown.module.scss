@@ -1,0 +1,33 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown_btn {
+  cursor: pointer;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #777;
+  font-weight: 500;
+}
+
+.content {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.07);
+}
+
+.content_item {
+  padding: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background: #fcfcfc;
+  }
+}
