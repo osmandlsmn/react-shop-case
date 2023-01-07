@@ -1,13 +1,19 @@
-@import "../../styles/utils/variables";
+@import "../../../styles/utils/variables";
+@import "../../../styles/utils/mixins";
 
 .header {
   background-color: $background;
+  box-shadow: 0px 19px 20px -7px rgba(0, 0, 0, 0.1);
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding-left: 54px;
   padding-right: 54px;
   height: 75px;
+
+  @include mq(sm) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .logo {
@@ -19,11 +25,8 @@
 .nav {
   color: #6f7181;
   font-weight: medium;
-
-  ul {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
 
   .nav_item {
     cursor: pointer;
