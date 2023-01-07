@@ -1,6 +1,37 @@
+@import "../../styles/utils/variables";
+
 .header {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  background-color: $background;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 54px;
+  padding-right: 54px;
+  height: 75px;
+}
+
+.logo {
+  color: $primary;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.nav {
+  color: #6f7181;
+  font-weight: medium;
+
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav_item {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    &:hover {
+      color: $text_black;
+    }
+  }
 }

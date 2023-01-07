@@ -1,12 +1,14 @@
+import Header from "@/components/Header";
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-const DefaultLayout: React.FC = () => {
+const Layout: React.FC = () => {
   return (
     <>
+      <Header />
       <Outlet />
     </>
   );
 };
 
-export default DefaultLayout;
+export default Layout;
