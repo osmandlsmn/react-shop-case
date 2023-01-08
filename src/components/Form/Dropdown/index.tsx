@@ -5,11 +5,12 @@ import type { Option } from "@/types";
 
 interface DropdownProps {
   options: Option[];
-  selected: Option;
+  selected?: Option;
   onChange: (selected: Option) => void;
+  label?: string;
 }
 
-const Dropdown: React.FC<DropdownProps> = ({ options, onChange, selected }) => {
+const Dropdown: React.FC<DropdownProps> = ({ options, onChange, selected, label }) => {
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = (option: Option) => {
@@ -19,13 +20,14 @@ const Dropdown: React.FC<DropdownProps> = ({ options, onChange, selected }) => {
 
   return (
     <div className={DropdownStyle.dropdown}>
+      {label && <p className={DropdownStyle.label}>{label}</p>}
       <div
         onClick={() => {
           setIsActive(!isActive);
         }}
         className={DropdownStyle.dropdown_btn}
       >
-        {selected.label}
+        {selected?.label}
         {isActive ? <Icon icon="arrow-drop-up" size={20} /> : <Icon icon="arrow-drop-down" size={20} />}
       </div>
       <div className={DropdownStyle.content} style={{ display: isActive ? "block" : "none" }}>

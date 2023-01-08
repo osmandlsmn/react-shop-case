@@ -17,6 +17,13 @@
   font-weight: 500;
 }
 
+.label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: getColor("label");
+}
+
 .content {
   background-color: getColor("background");
   border-radius: 5px;
