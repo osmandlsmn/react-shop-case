@@ -1,5 +1,21 @@
+// Converting scss variable into css variable
+
+:root {
+  @each $name, $color in $colors {
+    --color-#{$name}: #{$color};
+  }
+}
+
+[data-theme="dark"] {
+  @each $name, $color in $colors-dark {
+    --color-#{$name}: #{$color};
+  }
+}
+
 body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
-  background-color: $background;
+  background-color: getColor("background");
+  color: getColor("text");
+  transition: all 300ms;
 }

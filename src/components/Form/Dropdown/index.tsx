@@ -1,18 +1,19 @@
 import Icon from "@/components/Icon";
 import React, { useState } from "react";
 import DropdownStyle from "./Dropdown.module.scss";
+import type { Option } from "@/types";
 
 interface DropdownProps {
-  options: string[];
-  selected: string;
-  onChange: (selected: string) => void;
+  options: Option[];
+  selected: Option;
+  onChange: (selected: Option) => void;
 }
 
 const Dropdown: React.FC<DropdownProps> = ({ options, onChange, selected }) => {
   const [isActive, setIsActive] = useState(false);
 
-  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    onChange(e.currentTarget.innerText);
+  const handleClick = (option: Option) => {
+    onChange(option);
     setIsActive(!isActive);
   };
 
@@ -24,7 +25,7 @@ const Dropdown: React.FC<DropdownProps> = ({ options, onChange, selected }) => {
         }}
         className={DropdownStyle.dropdown_btn}
       >
-        {selected}
+        {selected.label}
         {isActive ? (
           <Icon icon="arrow-drop-up" size={20} />
         ) : (
@@ -36,8 +37,11 @@ const Dropdown: React.FC<DropdownProps> = ({ options, onChange, selected }) => {
         style={{ display: isActive ? "block" : "none" }}
       >
         {options.map((option) => (
-          <div onClick={handleClick} className={DropdownStyle.content_item}>
-            {option}
+          <div
+            onClick={() => handleClick(option)}
+            className={DropdownStyle.content_item}
+          >
+            {option.label}
           </div>
         ))}
       </div>

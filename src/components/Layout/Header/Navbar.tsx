@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import headerStyle from "./Header.module.scss";
 import { useTranslation } from "react-i18next";
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC<{ isOpen: boolean }> = ({ isOpen }) => {
   const { t } = useTranslation();
 
   const navigations = [
@@ -22,9 +22,11 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className={headerStyle.nav}>
+    <nav
+      className={`${headerStyle.nav} ${isOpen ? headerStyle.nav_active : ""}`}
+    >
       {navigations.map((nav, index) => (
-        <div className={headerStyle.nav_item}>
+        <div key={index} className={headerStyle.nav_item}>
           <NavLink to={nav.link}>{nav.name}</NavLink>
         </div>
       ))}

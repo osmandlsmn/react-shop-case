@@ -1,9 +1,19 @@
-// Colors
+// Default Theme
+$colors: (
+  primary: #925ff0,
+  navigation: #6f7181,
+  text: #e0e0e0,
+  text_black: #1e1e2d,
+  background: #fafafa,
+);
 
-$primary: #925ff0;
-$text_black: #1e1e2d;
-$gray: #cccccc;
-$background: #fafafa;
+// Dark Theme
+$colors-dark: (
+  primary: #925ff0,
+  navigation: #fafafa,
+  text: white,
+  background: #212121,
+);
 
 $xs: 23.5em; // 376px @media (max-width: $xs) {}
 
