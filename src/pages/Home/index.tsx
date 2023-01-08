@@ -1,10 +1,14 @@
 import React from "react";
 
+import Sidebar from "@/components/Sidebar";
+import MainLayout, { MainLayoutTitle } from "@/layouts/MainLayout";
+
 const Home: React.FC = () => {
   return (
-    <div>
-      <p>Home Page</p>
-    </div>
+    <MainLayout>
+      <MainLayoutTitle>Ürünler</MainLayoutTitle>
+      <Sidebar />
+    </MainLayout>
   );
 };
 

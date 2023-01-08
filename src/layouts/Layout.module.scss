@@ -1,0 +1,16 @@
+@import "../styles/utils/variables";
+@import "../styles/utils/mixins";
+
+.layout {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_title {
+  font-size: 2rem;
+  color: getColor("text");
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 20px;
+}

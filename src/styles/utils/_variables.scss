@@ -2,17 +2,16 @@
 $colors: (
   primary: #925ff0,
   navigation: #6f7181,
-  text: #e0e0e0,
-  text_black: #1e1e2d,
   background: #fafafa,
+  text: #1e1e2d,
 );
 
 // Dark Theme
 $colors-dark: (
   primary: #925ff0,
   navigation: #fafafa,
-  text: white,
   background: #212121,
+  text: white,
 );
 
 $xs: 23.5em; // 376px @media (max-width: $xs) {}
@@ -22,6 +21,11 @@ $md: 48em; // (min-768pxwidth: 768px)
 $lg: 62em; // (min-width: 992px)
 $gl: 64em; //! gap `lg - xl` (min-width: 1024px)
 $xl: 75em; // (min-width: 1200px)
+
+$col-sm: 540px; // (max-width: 540px)
+$col-md: 720px; // (max-width: 720px)
+$col-lg: 960px; // (max-width: 960px)
+$col-xl: 1140px; // (max-width: 1140px)
 
 $breakpoints: (
   sm: $sm,

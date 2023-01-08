@@ -21,7 +21,7 @@ const languages = [
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [language, setLanguage] = useState<Option>(languages[0]);
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   const updateLanguage = (selected: Option) => {
     i18n.changeLanguage(selected.value);
@@ -29,29 +29,16 @@ const Header: React.FC = () => {
   };
 
   return (
-    <div className={`${headerStyle.header}`}>
+    <div className={`${headerStyle.header} container`}>
       <div className={headerStyle.logo}>COINO</div>
-      <div
-        className={`${headerStyle.menu} ${
-          isOpen ? headerStyle.menu_active : ""
-        }`}
-      >
+      <div className={`${headerStyle.menu} ${isOpen ? headerStyle.menu_active : ""}`}>
         <Navbar isOpen={isOpen} />
         <div className={headerStyle.actions}>
-          <Dropdown
-            selected={language}
-            onChange={updateLanguage}
-            options={languages}
-          />
+          <Dropdown selected={language} onChange={updateLanguage} options={languages} />
           <ChangeTheme />
         </div>
       </div>
-      <Icon
-        className={headerStyle.hamburger}
-        onClick={() => setIsOpen(!isOpen)}
-        icon={isOpen ? "close" : "menu"}
-        size={30}
-      />
+      <Icon className={headerStyle.hamburger} onClick={() => setIsOpen(!isOpen)} icon={isOpen ? "close" : "menu"} size={30} />
     </div>
   );
 };

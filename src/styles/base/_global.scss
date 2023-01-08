@@ -19,3 +19,14 @@ body {
   color: getColor("text");
   transition: all 300ms;
 }
+
+.container {
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @include mq(lg) {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+}
