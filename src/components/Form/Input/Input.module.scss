@@ -1,0 +1,18 @@
+@import "../../../styles/utils/variables";
+@import "../../../styles/utils/mixins";
+
+.input_box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: getColor("input");
+  color: getColor("inputPlaceholder");
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.input {
+  color: getColor("inputPlaceholder");
+  background-color: transparent;
+  outline: none;
+}
