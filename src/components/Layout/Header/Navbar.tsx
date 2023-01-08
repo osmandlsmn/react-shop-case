@@ -22,9 +22,7 @@ const Navbar: React.FC<{ isOpen: boolean }> = ({ isOpen }) => {
   ];
 
   return (
-    <nav
-      className={`${headerStyle.nav} ${isOpen ? headerStyle.nav_active : ""}`}
-    >
+    <nav className={`${headerStyle.nav} ${isOpen ? headerStyle.nav_active : ""}`}>
       {navigations.map((nav, index) => (
         <div key={index} className={headerStyle.nav_item}>
           <NavLink to={nav.link}>{nav.name}</NavLink>

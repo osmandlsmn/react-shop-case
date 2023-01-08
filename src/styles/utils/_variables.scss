@@ -3,6 +3,8 @@ $colors: (
   primary: #925ff0,
   navigation: #6f7181,
   background: #fafafa,
+  input: rgba(190, 190, 190, 0.5),
+  inputPlaceholder: #a1a2af,
   text: #1e1e2d,
 );
 
@@ -11,6 +13,8 @@ $colors-dark: (
   primary: #925ff0,
   navigation: #fafafa,
   background: #212121,
+  input: rgba(190, 190, 190, 0.5),
+  inputPlaceholder: #a1a2af,
   text: white,
 );
 
