@@ -1,9 +1,20 @@
 {
+  "languages": {
+    "tr": "Türkçe",
+    "en": "İngilizce"
+  },
   "header": {
     "navigations": {
       "home": "Ana Sayfa",
       "basket": "Sepet",
       "favorites": "Favoriler"
+    }
+  },
+  "sidebar": {
+    "title": "Ürünler",
+    "priceRanges": {
+      "growing": "Fiyata göre artan",
+      "descending": "Fiyata göre azalan"
     }
   }
 }

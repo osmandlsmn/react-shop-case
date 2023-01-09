@@ -1,9 +1,20 @@
 {
+  "languages": {
+    "tr": "Turkish",
+    "en": "English"
+  },
   "header": {
     "navigations": {
       "home": "Home",
       "basket": "Basket",
       "favorites": "Favorites"
+    }
+  },
+  "sidebar": {
+    "title": "Products",
+    "priceRanges": {
+      "growing": "Price: Low to High",
+      "descending": "Price: High to Low"
     }
   }
 }
