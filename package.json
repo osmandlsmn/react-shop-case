@@ -10,6 +10,8 @@
     "lint": "eslint . --ext .ts,.tsx"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.1",
+    "axios": "^1.2.2",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
@@ -19,6 +21,7 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^12.1.4",
     "react-icomoon": "^2.5.4",
+    "react-redux": "^8.0.5",
     "react-router-dom": "^6.6.1",
     "sass": "^1.57.1"
   },
