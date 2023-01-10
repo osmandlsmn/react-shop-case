@@ -5,7 +5,7 @@ import Loading from "@/components/Loading";
 import productsStyle from "./Products.module.scss";
 
 const Products = () => {
-  const { isLoading, products } = useAppSelector((state) => state.products);
+  const { isLoading, filteredProducts } = useAppSelector((state) => state.products);
 
   return (
     <div className={productsStyle.container}>
@@ -15,7 +15,7 @@ const Products = () => {
         </div>
       ) : (
         <>
-          {products.map((product) => (
+          {filteredProducts.map((product) => (
             <ProductCard key={product.id} {...product} />
           ))}
         </>

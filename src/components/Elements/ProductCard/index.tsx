@@ -6,6 +6,7 @@ import React from "react";
 import cardStyle from "./Card.module.scss";
 import toast, { Toaster } from "react-hot-toast";
 import { useTranslation } from "react-i18next";
+import StarRating from "@/components/Elements/StarRating";
 
 const ProductCard: React.FC<Product> = (product) => {
   const dispatch = useAppDispatch();
@@ -23,6 +24,7 @@ const ProductCard: React.FC<Product> = (product) => {
         <h5 className={cardStyle.card_title}>
           <span className={cardStyle.brand}>{product.brand}</span> {product.title}
         </h5>
+        <StarRating rating={Number(product.rating.toFixed())} />
         <div className={cardStyle.card_footer}>
           <p className={cardStyle.card_price}>{product.price} TL</p>
           <div className={cardStyle.actions}>
