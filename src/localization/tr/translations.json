@@ -15,9 +15,14 @@
     "searchPlaceholder": "Aramak istediğiniz ürünü giriniz",
     "priceRange": "Fiyat Aralığı",
     "importanceLevel": "Önem Derecesi",
+    "filterPlaceholder": "Filtreleme yapabilirsiniz..",
     "priceRanges": {
-      "growing": "Fiyata göre artan",
-      "descending": "Fiyata göre azalan"
+      "lowToHigh": "Fiyata Göre Artan",
+      "highToLow": "Price Göre Azalan"
+    },
+    "importanceLevels": {
+      "lowToHigh": "Önem Derecesine Göre Artan",
+      "highToLow": "Önem Derecesine Göre Azalan"
     }
   },
   "notifications": {

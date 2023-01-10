@@ -15,9 +15,14 @@
     "searchPlaceholder": "Search in enter product name",
     "priceRange": "Price Range",
     "importanceLevel": "importance level",
+    "filterPlaceholder": "You can filter.",
     "priceRanges": {
-      "growing": "Price: Low to High",
-      "descending": "Price: High to Low"
+      "lowToHigh": "Price: Low to High",
+      "highToLow": "Price: High to Low"
+    },
+    "importanceLevels": {
+      "lowToHigh": "İmportance: Low to High",
+      "highToLow": "İmportance: High to Low"
     }
   },
   "notifications": {
