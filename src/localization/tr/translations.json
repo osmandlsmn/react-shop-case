@@ -11,7 +11,10 @@
     }
   },
   "sidebar": {
-    "title": "Ürünler",
+    "header_title": "Ürünler",
+    "searchPlaceholder": "Aramak istediğiniz ürünü giriniz",
+    "priceRange": "Fiyat Aralığı",
+    "importanceLevel": "Önem Derecesi",
     "priceRanges": {
       "growing": "Fiyata göre artan",
       "descending": "Fiyata göre azalan"

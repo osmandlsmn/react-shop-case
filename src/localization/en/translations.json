@@ -11,7 +11,10 @@
     }
   },
   "sidebar": {
-    "title": "Products",
+    "header_title": "Products",
+    "searchPlaceholder": "Search in enter product name",
+    "priceRange": "Price Range",
+    "importanceLevel": "importance level",
     "priceRanges": {
       "growing": "Price: Low to High",
       "descending": "Price: High to Low"
