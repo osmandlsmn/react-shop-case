@@ -25,6 +25,12 @@
       "highToLow": "Önem Derecesine Göre Azalan"
     }
   },
+  "basket": {
+    "header_title": "Sepet",
+    "emptyBasket": "Sepetiniz boş.",
+    "totalPrice": "Toplam Tutar",
+    "checkout": "Ödeme"
+  },
   "notifications": {
     "addedToBasket": "Ürün sepete eklendi.",
     "addedToFavorites": "Ürün favorilere eklendi.",

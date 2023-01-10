@@ -16,6 +16,7 @@ const Input: React.FC<InputProps> = ({ renderLeftIcon, renderRightIcon, placehol
     <div className={inputStyle.input_box}>
       {renderLeftIcon}
       <input className={inputStyle.input} placeholder={t(placeholder as string) as string} type="text" {...props} />
+      {renderRightIcon}
     </div>
   );
 };

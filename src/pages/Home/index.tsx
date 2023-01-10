@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import Sidebar from "@/components/Layout/Sidebar";
 import MainLayout, { MainLayoutContent, MainLayoutTitle } from "@/components/Layout/MainLayout";
 import { getProducts } from "@/store/products/productsThunk";

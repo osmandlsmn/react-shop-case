@@ -25,6 +25,12 @@
       "highToLow": "İmportance: High to Low"
     }
   },
+  "basket": {
+    "header_title": "Basket",
+    "emptyBasket": "Your basket is empty.",
+    "totalPrice": "Total Price",
+    "checkout": "Checkout"
+  },
   "notifications": {
     "addedToBasket": "Added to basket",
     "addedToFavorites": "Added to favorites",

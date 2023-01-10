@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Home from "@/pages/Home";
+import Basket from "@/pages/Basket";
 
 export default createBrowserRouter([
   {
@@ -10,6 +11,10 @@ export default createBrowserRouter([
       {
         path: "",
         element: <Home />,
+      },
+      {
+        path: "basket",
+        element: <Basket />,
       },
     ],
   },

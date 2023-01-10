@@ -13,7 +13,7 @@ const Navbar: React.FC<{ isOpen: boolean }> = ({ isOpen }) => {
     },
     {
       name: t("header.navigations.basket"),
-      link: "/",
+      link: "/basket",
     },
     {
       name: t("header.navigations.favorites"),

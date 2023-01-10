@@ -4,7 +4,7 @@ import { Product } from "@/types";
 import { useAppDispatch } from "@/utils/hooks";
 import React from "react";
 import cardStyle from "./Card.module.scss";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import { useTranslation } from "react-i18next";
 import StarRating from "@/components/Elements/StarRating";
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Input from "@/components/Form/Input";
 import Icon from "@/components/Icon";
 import sidebarStyle from "./Sidebar.module.scss";
