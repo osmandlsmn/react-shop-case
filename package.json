@@ -19,6 +19,7 @@
     "prettier": "^2.8.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.0",
     "react-i18next": "^12.1.4",
     "react-icomoon": "^2.5.4",
     "react-redux": "^8.0.5",

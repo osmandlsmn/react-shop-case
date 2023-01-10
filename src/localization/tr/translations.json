@@ -19,5 +19,11 @@
       "growing": "Fiyata göre artan",
       "descending": "Fiyata göre azalan"
     }
+  },
+  "notifications": {
+    "addedToBasket": "Ürün sepete eklendi.",
+    "addedToFavorites": "Ürün favorilere eklendi.",
+    "removedFromBasket": "Ürün sepetten kaldırıldı.",
+    "removedFromFavorites": "Ürün favorilerden kaldırıldı."
   }
 }

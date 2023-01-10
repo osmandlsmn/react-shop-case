@@ -19,5 +19,11 @@
       "growing": "Price: Low to High",
       "descending": "Price: High to Low"
     }
+  },
+  "notifications": {
+    "addedToBasket": "Added to basket",
+    "addedToFavorites": "Added to favorites",
+    "removedFromBasket": "Removed from basket",
+    "removedFromFavorites": "Removed from favorites"
   }
 }

@@ -16,3 +16,7 @@ export interface Product {
   thumbnail: string;
   images: string[];
 }
+
+export type BasketProduct = Product & {
+  quantity: number;
+};

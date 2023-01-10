@@ -1,19 +1,19 @@
 import { BasketProduct, Product } from "@/types";
 import { createSlice } from "@reduxjs/toolkit";
 
-interface BasketState {
+interface FavoriteSlice {
   products: BasketProduct[];
 }
 
-const initialState: BasketState = {
+const initialState: FavoriteSlice = {
   products: [],
 };
 
-const basketSlice = createSlice({
-  name: "basket",
+const favoriteSlice = createSlice({
+  name: "favorite",
   initialState,
   reducers: {
-    ADD_TO_CART: (state, action) => {
+    ADD_TO_FAVORITE: (state, action) => {
       const product = action.payload as Product;
       const basketProduct = state.products.find((p) => p.id === product.id);
 
@@ -29,5 +29,5 @@ const basketSlice = createSlice({
   },
 });
 
-export default basketSlice.reducer;
-export const { ADD_TO_CART } = basketSlice.actions;
+export default favoriteSlice.reducer;
+export const { ADD_TO_FAVORITE } = favoriteSlice.actions;
