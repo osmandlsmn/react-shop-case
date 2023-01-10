@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Input from "@/components/Form/Input";
 import Icon from "@/components/Icon";
 import sidebarStyle from "./Sidebar.module.scss";
-import Dropdown from "../Form/Dropdown";
+import Dropdown from "../../Form/Dropdown";
 import { Option } from "@/types";
 import { useTranslation } from "react-i18next";
 
@@ -22,9 +22,9 @@ const Sidebar: React.FC = () => {
   return (
     <div className={sidebarStyle.sidebar}>
       <form className={sidebarStyle.form}>
-        <Input renderLeftIcon={<Icon icon="search" size={20} />} label="test" placeholder="Aramak istediğin ürünü yaz." />
-        <Dropdown label="Fiyat Aralığı" selected={priceRange} options={priceRanges} onChange={updatePriceRange} />
-        <Dropdown label="Önem Derecesi" selected={priceRange} options={priceRanges} onChange={updatePriceRange} />
+        <Input renderLeftIcon={<Icon icon="search" size={20} />} label="test" placeholder="sidebar.searchPlaceholder" />
+        <Dropdown label={t("sidebar.priceRange") as string} selected={priceRange} options={priceRanges} onChange={updatePriceRange} />
+        <Dropdown label={t("sidebar.importanceLevel") as string} selected={priceRange} options={priceRanges} onChange={updatePriceRange} />
       </form>
     </div>
   );

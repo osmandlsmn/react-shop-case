@@ -7,4 +7,6 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
 export const MainLayoutTitle: React.FC<{ children: React.ReactNode }> = ({ children }) => <h1 className={layoutStyle.header_title}>{children}</h1>;
 
+export const MainLayoutContent: React.FC<{ children: React.ReactNode }> = ({ children }) => <div className={layoutStyle.content}>{children}</div>;
+
 export default MainLayout;

@@ -1,5 +1,5 @@
-@import "../styles/utils/variables";
-@import "../styles/utils/mixins";
+@import "../../styles/utils/variables";
+@import "../../styles/utils/mixins";
 
 .layout {
   margin-top: 50px;
@@ -13,4 +13,10 @@
   font-weight: 700;
   margin: 0;
   margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
