@@ -7,6 +7,7 @@ interface DropdownProps {
   options: Option[];
   selected?: Option;
   onChange: (selected: Option) => void;
+  placeholder?: string;
   label?: string;
 }
 
@@ -32,7 +33,7 @@ const Dropdown: React.FC<DropdownProps> = ({ options, onChange, selected, label 
         }}
         className={DropdownStyle.dropdown_btn}
       >
-        {t(selected?.label as string)}
+        {selected?.label ? t(selected?.label as string) : t("sidebar.filterPlaceholder")}
         {isActive ? <Icon icon="arrow-drop-up" size={20} /> : <Icon icon="arrow-drop-down" size={20} />}
       </div>
       <div className={DropdownStyle.content} style={{ display: isActive ? "block" : "none" }}>
