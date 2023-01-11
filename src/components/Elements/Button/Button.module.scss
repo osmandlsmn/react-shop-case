@@ -1,0 +1,45 @@
+@import "../../../styles/utils/variables";
+@import "../../../styles/utils/mixins";
+
+.button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.primary {
+  background-color: getColor("primary");
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: getColor("primary");
+  }
+
+  &:disabled {
+    background-color: getColor("primary");
+    cursor: not-allowed;
+  }
+}
+
+.outline {
+  background-color: transparent;
+  color: getColor("primary");
+  border: 1px solid getColor("primary");
+
+  &:hover {
+    background-color: getColor("primary");
+    color: white;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    color: getColor("primary");
+    border: 1px solid getColor("primary");
+    cursor: not-allowed;
+  }
+}
