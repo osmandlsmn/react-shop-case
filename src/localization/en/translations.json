@@ -26,15 +26,21 @@
     }
   },
   "basket": {
-    "header_title": "Basket",
+    "headerTitle": "My Cart",
+    "orderSummary": "Order Summary",
     "emptyBasket": "Your basket is empty.",
+    "totalProduct": "Total Product",
+    "deliveryPrice": "Delivery Price",
     "totalPrice": "Total Price",
-    "checkout": "Checkout"
+    "checkout": "Checkout",
+    "continueShopping": "Continue Shopping"
   },
   "notifications": {
     "addedToBasket": "Added to basket",
     "addedToFavorites": "Added to favorites",
     "removedFromBasket": "Removed from basket",
+    "increasedQuantity": "Increased quantity",
+    "decreasedQuantity": "Decreased quantity",
     "removedFromFavorites": "Removed from favorites"
   }
 }

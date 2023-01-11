@@ -26,15 +26,21 @@
     }
   },
   "basket": {
-    "header_title": "Sepet",
-    "emptyBasket": "Sepetiniz boş.",
+    "headerTitle": "Sepetim",
+    "orderSummary": "Sipariş Özeti",
+    "emptyBasket": "Sepetinde ürün yok.",
+    "totalProduct": "Ürün Sayısı",
+    "deliveryPrice": "Teslimat Ücreti",
     "totalPrice": "Toplam Tutar",
-    "checkout": "Ödeme"
+    "checkout": "Ödemeye Geç",
+    "continueShopping": "Alışverişe devam et"
   },
   "notifications": {
     "addedToBasket": "Ürün sepete eklendi.",
     "addedToFavorites": "Ürün favorilere eklendi.",
     "removedFromBasket": "Ürün sepetten kaldırıldı.",
-    "removedFromFavorites": "Ürün favorilerden kaldırıldı."
+    "removedFromFavorites": "Ürün favorilerden kaldırıldı.",
+    "increasedQuantity": "Ürün adedi arttırıldı.",
+    "decreasedQuantity": "Ürün adedi azaltıldı."
   }
 }
