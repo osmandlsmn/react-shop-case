@@ -45,8 +45,8 @@ const productSlice = createSlice({
     });
     builder.addCase(getProducts.fulfilled, (state, action) => {
       state.isLoading = false;
-      state.products = action.payload;
-      state.filteredProducts = action.payload;
+      state.products = action.payload.products;
+      state.filteredProducts = action.payload.products;
     });
   },
 });
