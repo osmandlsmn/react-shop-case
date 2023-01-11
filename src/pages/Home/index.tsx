@@ -4,7 +4,7 @@ import MainLayout, { MainLayoutContent, MainLayoutTitle } from "@/components/Lay
 import { getProducts } from "@/store/products/productsThunk";
 import { useTranslation } from "react-i18next";
 import { useAppDispatch } from "@/utils/hooks";
-import Products from "@/components/Products";
+import Products from "./Products";
 
 const Home: React.FC = () => {
   const { t } = useTranslation();

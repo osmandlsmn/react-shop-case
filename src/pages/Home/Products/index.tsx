@@ -1,8 +1,9 @@
 import React from "react";
 import { useAppSelector } from "@/utils/hooks";
-import ProductCard from "@/components/Elements/ProductCard";
 import Loading from "@/components/Loading";
 import productsStyle from "./Products.module.scss";
+import ProductCard from "../ProductCard";
+import { Product } from "@/types";
 
 const Products = () => {
   const { isLoading, filteredProducts } = useAppSelector((state) => state.products);
@@ -15,7 +16,7 @@ const Products = () => {
         </div>
       ) : (
         <>
-          {filteredProducts.map((product) => (
+          {filteredProducts?.map((product: Product) => (
             <ProductCard key={product.id} {...product} />
           ))}
         </>
