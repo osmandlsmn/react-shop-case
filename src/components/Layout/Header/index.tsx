@@ -4,13 +4,16 @@ import Navbar from "./Navbar";
 import Icon from "@/components/Icon";
 import ChangeTheme from "./ChangeTheme";
 import ChooseLanguage from "./ChooseLanguage";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className={`${headerStyle.header} container`}>
-      <div className={headerStyle.logo}>COINO</div>
+      <div className={headerStyle.logo}>
+        <Link to="/">COINO</Link>
+      </div>
       <div className={`${headerStyle.menu} ${isOpen ? headerStyle.menu_active : ""}`}>
         <Navbar isOpen={isOpen} />
         <div className={headerStyle.actions}>
