@@ -1,8 +1,8 @@
-import { BasketProduct, Product } from "@/types";
+import { Product } from "@/types";
 import { createSlice } from "@reduxjs/toolkit";
 
 interface FavoriteSlice {
-  products: BasketProduct[];
+  products: Product[];
 }
 
 const initialState: FavoriteSlice = {
@@ -14,20 +14,23 @@ const favoriteSlice = createSlice({
   initialState,
   reducers: {
     ADD_TO_FAVORITE: (state, action) => {
-      const product = action.payload as Product;
-      const basketProduct = state.products.find((p) => p.id === product.id);
-
-      if (basketProduct) {
-        basketProduct.quantity++;
+      const product = action.payload;
+      const index = state.products.findIndex((p) => p.id === product.id);
+      if (index === -1) {
+        state.products.push(product);
       } else {
-        state.products.push({
-          ...product,
-          quantity: 1,
-        });
+        state.products.splice(index, 1);
+      }
+    },
+    REMOVE_FROM_FAVORITE: (state, action) => {
+      const product = action.payload;
+      const index = state.products.findIndex((p) => p.id === product.id);
+      if (index !== -1) {
+        state.products.splice(index, 1);
       }
     },
   },
 });
 
 export default favoriteSlice.reducer;
-export const { ADD_TO_FAVORITE } = favoriteSlice.actions;
+export const { ADD_TO_FAVORITE, REMOVE_FROM_FAVORITE } = favoriteSlice.actions;
