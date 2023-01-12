@@ -26,6 +26,7 @@
     }
   },
   "basket": {
+    "empty": "Your basket is empty.",
     "headerTitle": "My Cart",
     "orderSummary": "Order Summary",
     "emptyBasket": "Your basket is empty.",
