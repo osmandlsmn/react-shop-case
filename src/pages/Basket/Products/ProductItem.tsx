@@ -84,7 +84,7 @@ const ProductItem: React.FC<Props> = ({ product }) => {
         <button onClick={decreaseQuantity} className={basketStyle.quantity_button}>
           <Icon icon="minus" size={18} />
         </button>
-        <input className={basketStyle.quantity_input} value={product.quantity} />
+        <input className={basketStyle.quantity_input} value={product.quantity} readOnly={true} />
         <button onClick={increaseQuantity} className={basketStyle.quantity_button}>
           <Icon icon="plus" size={18} />
         </button>

@@ -15,14 +15,15 @@
 }
 
 .products {
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
   overflow-y: scroll;
 
   @include mq(md) {
-    overflow-y: auto;
+    width: 70%;
+    overflow-y: hidden;
   }
 }
 

@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import Home from "@/pages/Home";
 import Basket from "@/pages/Basket";
 import Favorites from "@/pages/Favorites";
+import Payment from "@/pages/Payment";
 
 export default createBrowserRouter([
   {
@@ -20,6 +21,10 @@ export default createBrowserRouter([
       {
         path: "favorites",
         element: <Favorites />,
+      },
+      {
+        path: "payment",
+        element: <Payment />,
       },
     ],
   },

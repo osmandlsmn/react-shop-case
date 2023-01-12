@@ -15,7 +15,9 @@ const Cart = () => {
     return acc + product.price * product.quantity;
   }, 0);
 
-  const handleCheckout = () => {};
+  const handleCheckout = () => {
+    navigate("/payment");
+  };
 
   const continueShopping = () => {
     navigate("/");
@@ -43,7 +45,9 @@ const Cart = () => {
         </div>
       </div>
       <div className={basketStyle.cart_actions}>
-        <Button>{t("basket.checkout")}</Button>
+        <Button onClick={handleCheckout} disabled={products.length <= 0}>
+          {t("basket.checkout")}
+        </Button>
         <Button onClick={continueShopping} variant="outline">
           {t("basket.continueShopping")}
         </Button>
