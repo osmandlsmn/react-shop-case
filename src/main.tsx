@@ -7,12 +7,13 @@ import { Toaster } from "react-hot-toast";
 import store, { persistor } from "@/store";
 import "@/localization/index";
 import "./styles/main.scss";
+import "react-confirm-alert/src/react-confirm-alert.css";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
       <RouterProvider router={Router} />
-      <Toaster position="top-right" />
+      <Toaster position="bottom-right" />
     </PersistGate>
   </Provider>
 );
