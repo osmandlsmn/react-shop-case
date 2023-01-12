@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Home from "@/pages/Home";
 import Basket from "@/pages/Basket";
+import Favorites from "@/pages/Favorites";
 
 export default createBrowserRouter([
   {
@@ -15,6 +16,10 @@ export default createBrowserRouter([
       {
         path: "basket",
         element: <Basket />,
+      },
+      {
+        path: "favorites",
+        element: <Favorites />,
       },
     ],
   },

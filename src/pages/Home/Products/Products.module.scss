@@ -1,9 +1,17 @@
+@import "../../../styles/utils/variables";
+@import "../../../styles/utils/mixins";
+
 .container {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-left: 20px;
   width: 100%;
+  justify-content: center;
+
+  @include mq(md) {
+    justify-content: baseline;
+    margin-left: 20px;
+  }
 }
 
 .loading {

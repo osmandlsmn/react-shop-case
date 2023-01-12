@@ -7,6 +7,7 @@ import cardStyle from "./Card.module.scss";
 import toast from "react-hot-toast";
 import { useTranslation } from "react-i18next";
 import StarRating from "@/components/Elements/StarRating";
+import { ADD_TO_FAVORITE } from "@/store/favorite/favoriteSlice";
 
 const ProductCard: React.FC<Product> = (product) => {
   const dispatch = useAppDispatch();
@@ -15,6 +16,11 @@ const ProductCard: React.FC<Product> = (product) => {
   const handleAddToCart = () => {
     dispatch(ADD_TO_CART(product));
     toast.success(t("notifications.addedToBasket"));
+  };
+
+  const handleAddToFavorite = () => {
+    dispatch(ADD_TO_FAVORITE(product));
+    toast.success(t("notifications.addedToFavorite"));
   };
 
   return (
@@ -29,7 +35,7 @@ const ProductCard: React.FC<Product> = (product) => {
           <p className={cardStyle.card_price}>{product.price} TL</p>
           <div className={cardStyle.actions}>
             <Icon onClick={handleAddToCart} icon="shopping-basket" color="#CCCCCC" size={24} />
-            <Icon icon="favorite-border" color="#CCCCCC" size={24} />
+            <Icon onClick={handleAddToFavorite} icon="favorite-border" color="#CCCCCC" size={24} />
           </div>
         </div>
       </div>
