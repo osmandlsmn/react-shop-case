@@ -37,19 +37,56 @@
     "removeFromBasket": "Remove from basket",
     "removeFromBasketAndFavorites": "Remove from basket and favorites"
   },
+  "payment": {
+    "empty": "Your basket is empty.",
+    "headerTitle": "Payment",
+    "amountPayable": "Amount Payable",
+    "cartConfirm": "Confirm Cart",
+    "newAddress": "New Address",
+    "addNewAddress": "Add New Address",
+    "address": "Address",
+    "addressName": "Name",
+    "addressCity": "City",
+    "addressDistrict": "District",
+    "addressStreet": "Street",
+    "addressDoorNumber": "Flat Number",
+    "addressPhone": "Phone",
+    "addressFirstName": "First Name",
+    "addressLastName": "Surname",
+    "saveAddress": "Save Address",
+    "validations": {
+      "firstName": "First name is required.",
+      "lastName": "Last name is required.",
+      "firstNameMin": "First name must be at least 2 characters.",
+      "lastNameMax": "Last name must be at least 2 characters.",
+      "addressName": "Address name is required.",
+      "addressNameMin": "Address name must be at least 2 characters.",
+      "phone": "Phone is required.",
+      "phoneMax": "Phone must be at least 11 characters",
+      "phoneIsNumber": "Phone must be a number.",
+      "address": "Address is required",
+      "city": "City is required",
+      "district": "District is required",
+      "doorNumber": "Flat number is required"
+    }
+  },
   "favorite": {
+    "empty": "Your favorites is empty.",
     "headerTitle": "My Favorites",
     "emptyFavorites": "Your favorites is empty.",
     "addToBasket": "Add to Basket"
   },
   "notifications": {
     "addedToBasket": "Added to basket",
-    "addedToFavorites": "Added to favorites",
+    "addedToFavorite": "Added to favorites",
     "removedFromBasket": "Removed from basket",
     "increasedQuantity": "Increased quantity",
     "decreasedQuantity": "Decreased quantity",
-    "removedFromFavorites": "Removed from favorites",
-    "removeFromBasketAndFavorites": "Removed from basket added favorites"
+    "removedFromFavorite": "Removed from favorites",
+    "removeFromBasketAndFavorites": "Removed from basket added favorites",
+    "removedAddress": "Removed address",
+    "addedAddress": "Added address",
+    "selectedAddress": "Selected address"
   },
   "dialog": {
     "removeFromBasket": {

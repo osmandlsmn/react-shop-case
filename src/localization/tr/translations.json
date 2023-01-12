@@ -26,6 +26,7 @@
     }
   },
   "basket": {
+    "empty": "Sepetinde ürün yok.",
     "headerTitle": "Sepetim",
     "orderSummary": "Sipariş Özeti",
     "emptyBasket": "Sepetinde ürün yok.",
@@ -38,19 +39,21 @@
     "removeFromBasketAndFavorites": "Ürünü sepetten çıkar ve favorilere ekle"
   },
   "favorite": {
+    "empty": "Favorilerinde ürün yok",
     "headerTitle": "Favorilerim",
     "emptyFavorites": "Favorilerinde ürün yok.",
     "addToBasket": "Sepete Ekle"
   },
   "notifications": {
     "addedToBasket": "Ürün sepete eklendi.",
-    "addedToFavorites": "Ürün favorilere eklendi.",
+    "addedToFavorite": "Ürün favorilere eklendi.",
     "removedFromBasket": "Ürün sepetten kaldırıldı.",
-    "removedFromFavorites": "Ürün favorilerden kaldırıldı.",
+    "removedFromFavorite": "Ürün favorilerden kaldırıldı.",
     "increasedQuantity": "Ürün adedi arttırıldı.",
     "decreasedQuantity": "Ürün adedi azaltıldı.",
-    "removedFromFavorites": "Ürün favorilerden kaldırıldı.",
-    "removeFromBasketAndFavorites": "Ürün sepetten kaldırıldı ve favorilere eklendi."
+    "removeFromBasketAndFavorites": "Ürün sepetten kaldırıldı ve favorilere eklendi.",
+    "removedAddress": "Adres silindi.",
+    "selectedAddress": "Adres seçildi."
   },
   "dialog": {
     "removeFromBasket": {
@@ -59,5 +62,37 @@
     },
     "confirm": "Evet",
     "cancel": "İptal"
+  },
+  "payment": {
+    "headerTitle": "Ödeme",
+    "amountPayable": "Ödenecek Tutar",
+    "cartConfirm": "Sepeti Onayla",
+    "newAddress": "Yeni Adres Ekle",
+    "addNewAddress": "Yeni Adres Ekle",
+    "address": "Adres",
+    "addressName": "Adres Adı",
+    "addressCity": "Şehir",
+    "addressDistrict": "İlçe",
+    "addressStreet": "Cadde/Sokak",
+    "addressDoorNumber": "Kapı No",
+    "addressPhone": "Telefon Numarası",
+    "addressFirstName": "Ad",
+    "addressLastName": "Soyad",
+    "saveAddress": "Adresi Kaydet",
+    "validations": {
+      "firstName": "İsmini giriniz.",
+      "lastName": "Soyadını giriniz.",
+      "firstNameMin": "İsim en az 2 karakter olmalıdır.",
+      "lastNameMax": "Soyad en fazla 20 karakter olmalıdır.",
+      "addressName": "Adres adı giriniz.",
+      "addressNameMin": "Adres adı en az 2 karakter olmalıdır.",
+      "phone": "Telefon numarası giriniz.",
+      "phoneMax": "Telefon numarası en fazla 11 karakter olmalıdır.",
+      "phoneIsNumber": "Telefon numarası sadece rakamlardan oluşmalıdır.",
+      "address": "Adres giriniz.",
+      "city": "Şehir giriniz.",
+      "district": "İlçe giriniz.",
+      "doorNumber": "Kapı numarası giriniz."
+    }
   }
 }
