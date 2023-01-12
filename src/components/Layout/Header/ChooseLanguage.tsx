@@ -4,7 +4,8 @@ import Dropdown from "@/components/Form/Dropdown";
 import type { Option } from "@/types";
 
 const ChooseLanguage = () => {
-  const languages = [
+  const { i18n } = useTranslation();
+  const languages: Option[] = [
     {
       value: "tr",
       label: "languages.tr",
@@ -15,10 +16,11 @@ const ChooseLanguage = () => {
     },
   ];
 
-  const [language, setLanguage] = useState<Option>(languages[0]);
-  const { i18n } = useTranslation();
+  const getLanguage = languages.find((language) => language.value === i18n.language);
+  const [language, setLanguage] = useState<Option>(getLanguage as Option);
 
   const updateLanguage = (selected: Option) => {
+    window.localStorage.setItem("language", selected.value);
     i18n.changeLanguage(selected.value);
     setLanguage(selected);
   };

@@ -7,16 +7,8 @@ import { Option } from "@/types";
 import { useTranslation } from "react-i18next";
 import { useAppDispatch } from "@/utils/hooks";
 import { filterByImportance, filterByName, filterByPrice } from "@/store/products/productsSlice";
-
-const priceRanges = [
-  { value: "lowToHigh", label: "sidebar.priceRanges.lowToHigh" },
-  { value: "highToLow", label: "sidebar.priceRanges.highToLow" },
-];
-
-const importanceLevels = [
-  { value: "lowToHigh", label: "sidebar.importanceLevels.lowToHigh" },
-  { value: "highToLow", label: "sidebar.importanceLevels.highToLow" },
-];
+import { importanceLevels, priceRanges } from "./Sidebar.constans";
+import { Formik } from "formik";
 
 const Sidebar: React.FC = () => {
   const { t } = useTranslation();
@@ -43,13 +35,15 @@ const Sidebar: React.FC = () => {
   return (
     <div className={sidebarStyle.sidebar}>
       <form className={sidebarStyle.form}>
-        <Input
-          value={searchValue}
-          onChange={updateSearchValue}
-          renderLeftIcon={<Icon icon="search" size={20} />}
-          label="test"
-          placeholder="sidebar.searchPlaceholder"
-        />
+        <Formik initialValues={{}} onSubmit={() => {}}>
+          <Input
+            name="search"
+            value={searchValue}
+            onChange={updateSearchValue}
+            renderLeftIcon={<Icon icon="search" size={20} />}
+            placeholder="sidebar.searchPlaceholder"
+          />
+        </Formik>
         <Dropdown label={t("sidebar.priceRange") as string} selected={priceRange} options={priceRanges} onChange={updatePriceRange} />
         <Dropdown
           label={t("sidebar.importanceLevel") as string}

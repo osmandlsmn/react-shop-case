@@ -9,6 +9,10 @@
   font-weight: bold;
   cursor: pointer;
   transition: 0.2s;
+
+  &:disabled {
+    opacity: 0.5;
+  }
 }
 
 .primary {
