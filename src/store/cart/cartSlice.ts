@@ -1,12 +1,16 @@
-import { BasketProduct, Product } from "@/types";
+import { Address, BasketProduct, Product } from "@/types";
 import { createSlice } from "@reduxjs/toolkit";
 
 interface BasketState {
   products: BasketProduct[];
+  addresses: Address[];
+  selectedAdress: Address | null;
 }
 
 const initialState: BasketState = {
   products: [],
+  addresses: [],
+  selectedAdress: null,
 };
 
 const basketSlice = createSlice({
@@ -42,8 +46,27 @@ const basketSlice = createSlice({
         basketProduct.quantity += basketProduct.quantity = quantity;
       }
     },
+    ADD_ADDRESS: (state, action) => {
+      const address = action.payload as Address;
+      state.addresses.push({
+        ...address,
+        id: state.addresses.length + 1,
+      });
+    },
+    REMOVE_ADDRESS: (state, action) => {
+      const { id } = action.payload as Address;
+      const index = state.addresses.findIndex((a) => a.id === id);
+
+      if (index !== -1) {
+        state.addresses.splice(index, 1);
+      }
+    },
+    SELECT_ADDRESS: (state, action) => {
+      const address = action.payload as Address;
+      state.selectedAdress = address;
+    },
   },
 });
 
 export default basketSlice.reducer;
-export const { ADD_TO_CART, QUANİTY_CHANGE, REMOVE_FROM_CART } = basketSlice.actions;
+export const { ADD_TO_CART, QUANİTY_CHANGE, REMOVE_FROM_CART, ADD_ADDRESS, REMOVE_ADDRESS, SELECT_ADDRESS } = basketSlice.actions;
