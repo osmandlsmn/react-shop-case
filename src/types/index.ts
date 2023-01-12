@@ -26,3 +26,16 @@ export interface DialogButton {
   variant: "primary" | "outline" | "secondary";
   onClick: (handleClose: Function) => void;
 }
+
+export interface Address {
+  addressName: string;
+  id: number;
+  name: string;
+  surname: string;
+  address: string;
+  city: string;
+  country: string;
+  district: string;
+  zipCode: string;
+  doorNo: string;
+}
