@@ -17,6 +17,10 @@
 
 .content {
   display: flex;
-  flex-direction: row;
   gap: 30px;
+  flex-direction: column;
+
+  @include mq(md) {
+    flex-direction: row;
+  }
 }
