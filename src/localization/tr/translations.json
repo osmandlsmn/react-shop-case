@@ -33,7 +33,14 @@
     "deliveryPrice": "Teslimat Ücreti",
     "totalPrice": "Toplam Tutar",
     "checkout": "Ödemeye Geç",
-    "continueShopping": "Alışverişe devam et"
+    "continueShopping": "Alışverişe devam et",
+    "removeFromBasket": "Ürünü sepetten çıkar",
+    "removeFromBasketAndFavorites": "Ürünü sepetten çıkar ve favorilere ekle"
+  },
+  "favorite": {
+    "headerTitle": "Favorilerim",
+    "emptyFavorites": "Favorilerinde ürün yok.",
+    "addToBasket": "Sepete Ekle"
   },
   "notifications": {
     "addedToBasket": "Ürün sepete eklendi.",
@@ -41,6 +48,16 @@
     "removedFromBasket": "Ürün sepetten kaldırıldı.",
     "removedFromFavorites": "Ürün favorilerden kaldırıldı.",
     "increasedQuantity": "Ürün adedi arttırıldı.",
-    "decreasedQuantity": "Ürün adedi azaltıldı."
+    "decreasedQuantity": "Ürün adedi azaltıldı.",
+    "removedFromFavorites": "Ürün favorilerden kaldırıldı.",
+    "removeFromBasketAndFavorites": "Ürün sepetten kaldırıldı ve favorilere eklendi."
+  },
+  "dialog": {
+    "removeFromBasket": {
+      "title": "Sepetten Kaldır",
+      "message": "Ürünü sepetten kaldırmak istediğine emin misin?"
+    },
+    "confirm": "Evet",
+    "cancel": "İptal"
   }
 }

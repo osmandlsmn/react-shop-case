@@ -33,7 +33,14 @@
     "deliveryPrice": "Delivery Price",
     "totalPrice": "Total Price",
     "checkout": "Checkout",
-    "continueShopping": "Continue Shopping"
+    "continueShopping": "Continue Shopping",
+    "removeFromBasket": "Remove from basket",
+    "removeFromBasketAndFavorites": "Remove from basket and favorites"
+  },
+  "favorite": {
+    "headerTitle": "My Favorites",
+    "emptyFavorites": "Your favorites is empty.",
+    "addToBasket": "Add to Basket"
   },
   "notifications": {
     "addedToBasket": "Added to basket",
@@ -41,6 +48,15 @@
     "removedFromBasket": "Removed from basket",
     "increasedQuantity": "Increased quantity",
     "decreasedQuantity": "Decreased quantity",
-    "removedFromFavorites": "Removed from favorites"
+    "removedFromFavorites": "Removed from favorites",
+    "removeFromBasketAndFavorites": "Removed from basket added favorites"
+  },
+  "dialog": {
+    "removeFromBasket": {
+      "title": "Remove from basket",
+      "message": "Are you sure you want to remove this product from your basket?"
+    },
+    "confirm": "Yes",
+    "cancel": "Cancel"
   }
 }
