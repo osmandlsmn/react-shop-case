@@ -20,3 +20,9 @@ export interface Product {
 export type BasketProduct = Product & {
   quantity: number;
 };
+
+export interface DialogButton {
+  label: string;
+  variant: "primary" | "outline" | "secondary";
+  onClick: (handleClose: Function) => void;
+}
