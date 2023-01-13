@@ -48,9 +48,10 @@ const basketSlice = createSlice({
     },
     ADD_ADDRESS: (state, action) => {
       const address = action.payload as Address;
+      const id = state.addresses?.length + 1 || 1;
       state.addresses.push({
         ...address,
-        id: state.addresses.length + 1,
+        id,
       });
     },
     REMOVE_ADDRESS: (state, action) => {
