@@ -23,7 +23,6 @@ const AddressItem: React.FC<Props> = ({ address }) => {
 
   const selectAddress = () => {
     dispatch(SELECT_ADDRESS(address));
-    toast.success(t("notifications.selectedAddress"));
   };
 
   return (

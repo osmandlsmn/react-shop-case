@@ -39,9 +39,7 @@ const Payment = () => {
                 <Icon icon="plus" size={18} />
               </div>
             </div>
-            {addresses.map((address: Address) => (
-              <AddressItem key={address.name} address={address} />
-            ))}
+            {addresses.length > 0 && addresses?.map((address: Address) => <AddressItem key={address.name} address={address} />)}
           </div>
           <Cart />
         </div>

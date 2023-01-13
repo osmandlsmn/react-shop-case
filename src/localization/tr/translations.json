@@ -18,7 +18,7 @@
     "filterPlaceholder": "Filtreleme yapabilirsiniz..",
     "priceRanges": {
       "lowToHigh": "Fiyata Göre Artan",
-      "highToLow": "Price Göre Azalan"
+      "highToLow": "Fiyata Göre Azalan"
     },
     "importanceLevels": {
       "lowToHigh": "Önem Derecesine Göre Artan",
@@ -52,6 +52,7 @@
     "increasedQuantity": "Ürün adedi arttırıldı.",
     "decreasedQuantity": "Ürün adedi azaltıldı.",
     "removeFromBasketAndFavorites": "Ürün sepetten kaldırıldı ve favorilere eklendi.",
+    "addedAddress": "Adres eklendi.",
     "removedAddress": "Adres silindi.",
     "selectedAddress": "Adres seçildi."
   },
@@ -87,7 +88,7 @@
       "addressName": "Adres adı giriniz.",
       "addressNameMin": "Adres adı en az 2 karakter olmalıdır.",
       "phone": "Telefon numarası giriniz.",
-      "phoneMax": "Telefon numarası en fazla 11 karakter olmalıdır.",
+      "phoneMin": "Telefon numarası en az 11 karakter olmalıdır.",
       "phoneIsNumber": "Telefon numarası sadece rakamlardan oluşmalıdır.",
       "address": "Adres giriniz.",
       "city": "Şehir giriniz.",

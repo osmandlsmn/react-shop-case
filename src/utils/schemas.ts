@@ -9,7 +9,7 @@ export const paymentSchema = (t: Function) =>
       .number()
       .typeError(t("payment.validations.phoneIsNumber"))
       .required(t("payment.validations.phone"))
-      .max(11, t("payment.validations.phoneMax")),
+      .min(11, t("payment.validations.phoneMin")),
     address: yup.string().required(t("payment.validations.address")),
     district: yup.string().required(t("payment.validations.district")),
     city: yup.string().required(t("payment.validations.city")),

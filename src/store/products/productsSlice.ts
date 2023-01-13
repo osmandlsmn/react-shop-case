@@ -20,7 +20,9 @@ const productSlice = createSlice({
   reducers: {
     filterByName: (state, action: PayloadAction<string>) => {
       const { payload } = action;
-      state.filteredProducts = state.products.filter((product) => product.title.toLowerCase().includes(payload.toLowerCase()));
+      state.filteredProducts = state.products.filter(
+        (product) => product.title.toLowerCase().includes(payload.toLowerCase()) || product.brand.toLowerCase().includes(payload.toLowerCase())
+      );
     },
     filterByPrice: (state, action: PayloadAction<string>) => {
       const { payload } = action;

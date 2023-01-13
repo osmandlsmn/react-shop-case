@@ -63,7 +63,7 @@
       "addressName": "Address name is required.",
       "addressNameMin": "Address name must be at least 2 characters.",
       "phone": "Phone is required.",
-      "phoneMax": "Phone must be at least 11 characters",
+      "phoneMin": "Phone must be at least 11 characters",
       "phoneIsNumber": "Phone must be a number.",
       "address": "Address is required",
       "city": "City is required",
