@@ -26,7 +26,7 @@ const AddressItem: React.FC<Props> = ({ address }) => {
   };
 
   return (
-    <div onClick={selectAddress} className={`${paymentStyle.address} ${selectedAdress.id === address.id ? paymentStyle.seleceted_address : ""}`}>
+    <div onClick={selectAddress} className={`${paymentStyle.address} ${selectedAdress?.id === address?.id ? paymentStyle?.seleceted_address : ""}`}>
       <Icon onClick={deleteAddress} className={paymentStyle.address_delete_button} icon="delete" size={24} />
       <div className={paymentStyle.address_content}>
         <div className={paymentStyle.adress_header}>
